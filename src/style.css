@@ -23,10 +23,11 @@ p {
 
 /* #region card */
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 170px;
+  grid-template-rows: 192px 1fr 1fr 1fr;
   width: 200px;
+  height: 404px;
   padding: 14px;
 
   background: #fff;
@@ -35,21 +36,14 @@ p {
 }
 
 .card__image {
+  place-self: center;
   height: 134px;
   width: 160px;
-  margin-top: 15px;
-}
-
-.card__description {
-  margin-top: 45px;
-}
-
-.card__feedback {
-  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .card__price {
-  margin: 20px 0;
+  align-self: center;
 }
 /* #endregion */
 
